@@ -74,3 +74,4 @@ def sortAsc(nums):
 
 nums = [33,55,1,2,3,78,130,3,0,-2,-90]
 print (sortAsc(nums))
+#nice
