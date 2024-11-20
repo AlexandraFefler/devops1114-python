@@ -24,7 +24,18 @@ if ("journal.txt" in os.listdir(os.getcwd())): # only if journal.txt is in list 
 
     f = open("journal.txt", "r") 
     content_file_str = f.read() # now we count the wordssss
+
     content_file_lst = content_file_str.split(" ") #TODO: either split not by " ", or split further by \n. Rn it splits wrong
+    # temp_list = []  #TODO: טוב ניסיתי משהו שוב לא עובד אח"כ אסיים
+    # for i in range(0,len(content_file_lst)):
+    #     if "\n" in content_file_lst[i]:
+    #         temp_list = content_file_lst[i].split("\n")
+    #         print(temp_list)
+    #     for actual_word in temp_list:
+    #         # print(actual_word + "    added")
+    #         content_file_lst.insert(i, actual_word)
+        
+    
     count_words = 0 #counting all the words I've split up
     for word in content_file_lst:
         count_words += 1

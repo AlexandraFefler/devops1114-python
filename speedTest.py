@@ -1,4 +1,3 @@
-# straight up chatGPT:
 # import csv
 # import datetime
 # import time
@@ -67,8 +66,8 @@ def measure_speed():
         st = speedtest.Speedtest()
         # st.get_servers()
         st.get_best_server()
-        download_speed = st.download() / 1_000_000  # Convert to Mbps
-        upload_speed = st.upload() / 1_000_000  # Convert to Mbps
+        download_speed = st.download() / 1_000_000  # download() returns number in bytes, so convert to Mbps
+        upload_speed = st.upload() / 1_000_000  # same
         return round(download_speed, 2), round(upload_speed, 2)
     except Exception as e:
         print(f"Error measuring internet speed: {e}")
