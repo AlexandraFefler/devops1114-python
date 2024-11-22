@@ -446,5 +446,22 @@
 
 
 
-print(list(filter(lambda x: x % 2 == 0, [1,2,3,4,5,6,7,8,9,10])))
-print(list(map(lambda x: x % 2 == 0, [1,2,3,4,5,6,7,8,9,10])))
+# print(list(filter(lambda x: x % 2 == 0, [1,2,3,4,5,6,7,8,9,10])))
+# print(list(map(lambda x: x % 2 == 0, [1,2,3,4,5,6,7,8,9,10])))
+
+# class A:
+#     count = 0
+#     def __init__(self):
+#         A.count += 1
+# obj1 = A()
+# obj2 = A()
+# print(A.count)
+
+
+# def func(ns):
+#     s = 0
+#     for k in range(1,len(ns)):
+#         s += ns[k]
+#     return s
+# qs = [1,2,3,4,5]
+# print(func(qs))
